@@ -1,0 +1,535 @@
+
+/* Configuration de base du document */
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif; 
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --txt:#000000;
+    --primary:#333333;
+    --btn2:#CCCCCC;
+    --bg: #EEEEEE;
+    --accent:#3498DB;
+
+}
+body{
+    background-color: var(--bg);
+    width: 100%;
+    height: 100vh;
+}
+/*Barre de navigation*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    margin-top: 20px;
+}
+nav ul li {
+    display: inline-block; 
+}
+
+/* config des deux boutons de la barre de navigation et animation pour l'apparition du bouton au scroll*/
+
+#scrollButton, #normalButton{
+    margin-right: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--btn2); 
+    color: var(--txt); 
+    border-radius: 5px;
+}
+
+#normalButton:hover{
+    background-color: darkgray;
+    color: white;
+}
+#scrollButton{
+    background-color: var(--accent);
+    color: white;
+    animation: fadeIn 0.5s ease-in-out forwards; 
+}
+#scrollButton.hidden{
+    display: none;
+} 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+/*Partie HERO PAGE*/
+
+.HeroPage{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.Logo{
+    width: 130px;
+    margin-left: 20px;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 20px;
+}
+h3{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: normal;
+}
+.BrandName{
+    background-image: linear-gradient(45deg, var(--accent), var(--btn2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+strong{
+    font-size: 24px;
+}
+.Boxes{
+    text-decoration: none;
+    z-index: 50;
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.txtBox{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/*Style pour les boutons de la page HERO*/
+
+.b1, .b2, button{
+    background-color: var(--primary);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    width: 90%;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline; 
+    user-select: none;
+  }
+  
+
+  .b1 {
+      width: 90%;
+      background-color: var(--btn2);
+      color: var(--txt);
+  }
+  .b1:hover, .b2:hover {
+    bottom: 2px;
+    background-color: var(--txt);
+    color: white;
+  }
+  .b2 {
+      width: 100%;
+  }
+
+.Car{
+    position:absolute;
+    top: 35vh;
+    right: 50px;
+    width: 40vw;
+    z-index: -1;
+}
+
+/*Flèche animée pour le scroll descendant*/
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0;
+    width: 13px;
+    height: 13px;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    z-index: 9;
+    left: 30px;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 1s ease-in-out infinite;
+    -moz-animation:    fade_move_down 1s ease-in-out infinite;
+    animation:         fade_move_down 1s ease-in-out infinite;
+  }
+  /*animated scroll arrow animation*/
+  @-webkit-keyframes fade_move_down {
+    0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @-moz-keyframes fade_move_down {
+    0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @keyframes fade_move_down {
+    0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+
+  /* Section about avec images et texte pour expliquer le service proposé */
+
+  .About{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+    padding-bottom: 300px;
+  }
+  .titleAbout{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline var(--accent);
+    text-underline-offset: 10px;
+    font-weight: bolder;
+  }
+.abt{
+    background-color: #e5e5e5e5;
+    box-shadow: 11px 8px 51px -4px rgba(13,153,255,0.38);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50vw;
+    gap: 50px;
+    transition: transform 0.3s;
+}
+.abt:hover {
+        transform: translateY(-5px);
+      }
+
+  .imgAbout{
+    width: 400px;
+    height: 300px;
+  }
+  .txtAbt p{
+    margin-top: 40px;
+    text-align: justify;
+  }
+.txtAbt strong{
+    border-top: 3px solid var(--accent);
+    border-bottom: 3px solid var(--accent);
+    padding: 5px;
+    font-weight: 600;
+
+}
+  .txtAbt{
+    width: 405px;
+  }
+
+  /* bouton inscription au milieu des deux */
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+  }
+  .login strong{
+    margin-top: 90px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline var(--accent);
+    text-underline-offset: 10px;
+    font-weight: bolder;
+  }
+  .login p{
+    margin-top: 10px;
+  }
+  .login button{
+    margin-top: 5vh;
+    width: 200px;
+  }
+  #scrollButton:hover {
+    background-color: darkgray;
+    color: white;
+  }
+
+/* Section pour montrer les différentes voitures */
+
+.titleCars{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline var(--accent);
+    text-underline-offset: 10px;
+    font-weight: bolder;
+}
+
+.vehicules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .txtVehicules{
+    margin-top: 30px;
+    width: 60vw;
+    text-align: center;
+  }
+  .VehiculesOnTop{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .VehiculesOnTop img{
+    width: 300px;
+    transition: transform 0.3s;
+  }
+
+  .VehiculesOnTop img:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Liste des véhicules en fonction de leur marque */
+
+.ListVehicules{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hListV{
+    margin-bottom: 10vh;
+    font-size: 30px;
+    text-decoration: underline var(--accent);
+    text-underline-offset: 10px;
+    font-weight: bolder;
+}
+.cateVehicules{
+    display: flex;
+    gap: 10vw;
+}
+.imgList{
+    width: 100px;
+}
+.ListHeader{
+    font-weight: bold;
+    text-align: center;
+}
+.ListVehicules ul li{
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.LogoFooter{
+    width: 25px;
+    justify-content: center;
+}
+
+.txtFooter{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    justify-content: space-between;
+    text-decoration: none;
+}
+a{
+    color: var(--txt);
+}
+.rights{
+    margin-top: 5px;
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+
+/* Partie responsive */
+
+@media (max-width: 1024px){
+  .abt{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .txtAbt {
+    text-align: center;
+  }
+  .txtAbt {
+    margin-top: 20px;
+  }
+
+  .abt2{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+    body{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .HeroPage{
+        width: 100vw;
+    }
+    .FirstPage {
+        margin-top: 200px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .Logo {
+        width: 50px;
+    }
+
+    .Boxes {
+        flex-direction: column; 
+        text-align: center; 
+    }
+    .Car {
+        top: 10px;
+        width: 80%; 
+    }
+    nav{
+        top: 10px;
+    }
+    .scroll-down{
+        display: none;
+    }
+
+    .txtAbt{
+      font-size: small;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .VehiculesOnTop{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .hListV{
+      margin-top: 5vh;
+    }
+}
+
+@media (max-width: 700px) {
+  body{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.HeroPage{
+    width: 100vw;
+}
+.FirstPage {
+    margin-top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.Logo {
+    width: 50px;
+}
+
+.Boxes {
+    flex-direction: column; 
+    text-align: center; 
+}
+.Car {
+    top: 10px;
+    width: 100%;
+}
+.imgAbout{
+  width: 200px;
+}
+nav{
+    top: 10px;
+}
+.scroll-down{
+    display: none;
+}
+
+.txtAbt{
+  font-size: small;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.VehiculesOnTop{
+  grid-template-columns: repeat(1, 1fr);
+}
+.hListV{
+  margin-top: 5vh;
+}
+.login p{
+  text-align: center;
+}
+}

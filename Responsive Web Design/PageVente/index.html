@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>PageVente</title>
+</head>
+<body>
+
+    <!-- boutons dans la navbar -->
+    
+    <nav>
+        <ul>
+            <li><a href="#Identif" id="scrollButton" class="hidden">LOUEZ-MOI</a></li>
+            <li><a href="#sidentif" id="normalButton">S'identifier</a></li>
+        </ul>
+    </nav>
+
+    <!-- Première page (Hero) du site. Page d'arrivée sur le site -->
+
+    <section id="Identif" class="HeroPage">
+        <div class="FirstPage">
+            <img class="Logo" src="/PageVente/assets/LogoRennnnt.png" alt="">
+            <h1>Location de voitures avec</h1>
+            <h1 class="BrandName">Louez-moi</h1>
+            <h3>Un monde sans limites s'offre à vous !</h3>
+            <div class="Boxes">
+                <div class="Box1">
+                    <p><strong>Dès 99.-</strong> par jour</p>
+                    <p class="txtBox">Cherchez sur le catalogue les meilleures véhicules à louer</p>
+                    <a href="#VersVehicules"><button class="b1">VEHICULES</button></a>
+                </div>
+                <div class="Box2">
+                    <p><strong>Dès 400.-</strong> par semaine</p>
+                    <p class="txtBox">Une location hebdomadaire te reviens moins chère ! </p>
+                    <a href="#Loue"><button class="b2">LOUE-MOI</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="Car" src="/PageVente/assets/Car finance-pana.svg" alt="">
+    <a href="#page2"><div class="scroll-down"></div></a>
+            
+    <!-- Page 2 section A propos pour expliquer ce qu'est la marque -->
+
+    <section class="About">
+                <p id="page2" class="titleAbout">Qui sommes nous ?</p>
+                    <div class="abt1 abt">
+                        <img class="imgAbout" src="/PageVente/assets/Car rental-amico.svg" alt="">
+                    <div class="txtAbt">
+                        <strong>Une nouvelle vision</strong>
+                        <p>Plus besoin de choisir un nombre de jours de location défini. 
+                            Il vous suffit juste de vous inscrire en ligne, mettre votre moyen de paiement et le tour est joué !
+                            Lors de la récupération d'un véhicule à un de nos parking, il faudra scanner le code QR pour avoir la clé
+                            et le temps de location sera décompté jusqu'au retour du véhicule ! <br><br>
+
+                            <em>Louez et roulez !</em>
+                        
+                        </p>
+                    </div>
+                    </div>
+                    <div class="abt2 abt">
+
+                    <div class="txtAbt" >
+                        <strong>Depuis partout</strong>
+                        <p>Plus besoin d'aller loin pour louer. Avec notre application, 
+                            découvrez tous les lieux ou se trouvent nos différents véhicules
+                            en fonction de votre besoin. Egalement dans les aéroports et les grandes gares il y 
+                            a un parking réservé a nos véhicules de location. Cherchez plus, vous êtes tout le temps à côté !
+                        </p>
+                    </div>
+                    <img class="imgAbout" src="/PageVente/assets/Car rental-rafiki.svg" alt="">
+                    </div>
+            </section>
+
+            <!-- Première grille ou il y a les véhicules les + loués du moment -->
+
+            <section id="VersVehicules" class="vehicules">
+                <p   class="titleCars">Nos véhicules</p>
+                <p class="txtVehicules">Voici nos véhicules les plus loués ce mois-ci ! Il y a au minimum 1 de ces véhicules par parking dans les plus grandes
+                    gares de tout le pays. selectionner le véhicule de votre choix et trouver-le le plus près de chez vous !
+                </p>
+
+                <div class="VehiculesOnTop">
+                    <img src="/PageVente/assets/Becane.png" alt="">
+                    <img src="/PageVente/assets/Familial.png" alt="">
+                    <img src="/PageVente/assets/Ferrari.png" alt="">
+                    <img src="/PageVente/assets/FordPickup.png" alt="">
+                    <img src="/PageVente/assets/Scooter.png" alt="">
+                    <img src="/PageVente/assets/Sport.png" alt="">
+                    <img src="/PageVente/assets/Utilitaire.png" alt="">
+                    <img src="/PageVente/assets/BMW.png" alt="">
+                    <img src="/PageVente/assets/Sedan.png" alt="">
+                </div>
+            </section>
+
+            <!-- Petit conteneur pour inciter l'utilisateur à se conecter pour bénéficier d'avantages -->
+
+            <div class="login" id="Loue">
+                <strong>Inscrivez-vous !</strong>
+                <p>Afin d'avoir des réductions sur vos locations avec un système de fidelité</p>
+                <button id="scrollButton" class="LogBtn">S'INSCRIRE</button>
+            </div>
+
+            <!-- Deuxième grille ou on peut louer des véhicules spéciaux -->
+
+            <section id="services" class="vehicules">
+                <p   class="titleCars">Véhicules spéciaux</p>
+                <p class="txtVehicules">Les véhicules spéciaux ci-desosus ne sont pas accessibles partout. Il vous faut ajouter un permis supplémentaire ou un
+                    apport financier selon le véhicule spécial choisi. <br><br> Cliquez sur le véhicule pour connaître la condition de location !
+                </p>
+
+                <div class="VehiculesOnTop">
+                    <img src="/PageVente/assets/Autonome.png" alt="">
+                    <img src="/PageVente/assets/camionnette.png" alt="">
+                    <img src="/PageVente/assets/Minibus.png" alt="">
+                    <img src="/PageVente/assets/Remorque.png" alt="">
+                    <img src="/PageVente/assets/Moto3roues.png" alt="">
+                    <img src="/PageVente/assets/Bugatti.png" alt="">
+                </div>
+            </section>
+
+            <!-- Section pour voir les meilleurs véhicules par catégories en fonction des meilleures marques -->
+
+            <section class="ListVehicules">
+                <p class="hListV">Les meilleurs véhicules par catégorie</p>
+                <div class="cateVehicules">
+                <div class="camionnette">
+                    <img class="imgList" src="/PageVente/assets/truck.svg" alt="">
+                    <p class="ListHeader">Utilitaires</p>
+                    <ul>
+                        <li>Ford</li>
+                        <li>Opel</li>
+                        <li>Dodge</li>
+                        <li>VolksWagen</li>
+                        <li>Scania</li>
+                    </ul>
+                </div>
+                <div class="camionnette">
+                    <img class="imgList" src="/PageVente/assets/carNormal.svg" alt="">
+                    <p class="ListHeader">Voitures</p>
+                    <ul>
+                        <li>BMW</li>
+                        <li>Renault</li>
+                        <li>Audi</li>
+                        <li>VolksWagen</li>
+                        <li>Porsche</li>
+                    </ul>
+                </div>
+                <div class="camionnette">
+                    <img class="imgList" src="/PageVente/assets/car.svg" alt="">
+                    <p class="ListHeader">Sportives</p>
+                    <ul>
+                        <li>Bugatti</li>
+                        <li>Ferrari</li>
+                        <li>McLaren</li>
+                    </ul>
+                </div>
+                <div class="camionnette">
+                    <img class="imgList" src="/PageVente/assets/bike.svg" alt="">
+                    <p class="ListHeader">Motos</p>
+                    <ul>
+                        <li>scooter électrique</li>
+                        <li>Harley Davidson</li>
+                        <li>Kawasaki</li>
+                        <li>Yamaha</li>
+                    </ul>
+                </div>
+            </div>
+            </section>
+
+            <!-- Footer avec les liens de contitions d'utilisations, etc. -->
+
+            <footer>
+                <div class="imgFooter">
+                    <a href="#Identif"><img class="LogoFooter" src="/PageVente/assets/LogoRennnnt.png" alt=""></a>
+                </div>
+                <div class="txtFooter">
+                    <a href="#conditions">Conditions d'utilisation</a>
+                    <a href="#politique">Politique de confidentialité</a>
+                    <a href="#cookies">Gérer les cookies</a>
+                    <a href="#copyrights">Copyrights</a>
+                    <a href="#aide">Aide</a>
+                    <a href="#designed">Designed by Lionel W.</a>
+                </div>
+                <p class="rights">@Tous droits réservés</p>
+            </footer>
+
+            <!-- Script qui permet l'affichage au scroll du bouton "Louez-moi" -->
+
+            <script src="script.js"></script>
+</body>
+</html>

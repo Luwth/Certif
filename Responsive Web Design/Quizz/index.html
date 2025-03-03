@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,400;1,700&display=swap" 
+rel="stylesheet">
+    <title>Quizz</title>
+</head>
+<body>
+    <section class="QuizHTML">
+        <div class="txt">
+            <h1>Le Quiz ultime Suisse !</h1>
+            <h2>Est-ce que tu connais vraiment ce merveilleux pays?</h2>
+            <p>7 questions pour déterminer ton niveau de connaissance</p>
+        </div>
+
+        <!-- Input Checkbox -->
+
+        <div id="Check" class="Question">
+            <div class="img">
+                <img src="/Quizz/assets/langues.png" alt="">
+            </div>
+            <div class="texte">
+                <strong>Les langues</strong>
+                <div class="formeHaut">
+                    <div class="Trait"></div>
+                </div>
+                <p>La suisse a une particularité. Elle parle 4 langues différentes. Sur les embalalges au supermarché, le produit est écrit en 
+                    plusieurs langues. Quelle est la langue la + parlée en Suisse ?</p>
+                    <div class="formeBas">
+                        <div class="Trait"></div>
+                    </div>
+            </div>
+            <div class="formulaire">
+                <form action="">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1">Suisse-Allemand</label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="checkbox2">
+                        <label for="checkbox2">Français</label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="checkbox3">
+                        <label for="checkbox3">Italien</label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="checkbox4">
+                        <label for="checkbox4">Romanche</label>
+                    </div>
+                </form>
+            </div>
+            
+        </div> 
+
+        <!-- Input DatePicker -->
+
+        <div id="Dte" class="Question">
+            <div class="img">
+                <img src="/Quizz/assets/Vote.png" alt="">
+            </div>
+            <div class="texte">
+                <strong>Le suffrage féminin</strong>
+                <div class="formeHaut">
+                    <div class="Trait"></div>
+                </div>
+                <p>La suisse est un peu à la ramasse. C'est un des derniers pays à avoir autorisé le droit
+                    de vote pour les femmes. Mais c'était quand ?</p>
+                    <div class="formeBas">
+                        <div class="Trait"></div>
+                    </div>
+            </div>
+            <div class="Datepicker">
+                <form action="">
+                    <input type="date">
+                </form>
+            </div>
+            
+        </div>
+
+        <!-- Input number -->
+
+        <div id="nbr" class="Question">
+            <div class="img">
+                <img src="/Quizz/assets/gouvernement.png" alt="">
+            </div>
+            <div class="texte">
+                <strong>Le Gouvernement</strong>
+                <div class="formeHaut">
+                    <div class="Trait"></div>
+                </div>
+                <p>La suisse est gérée par plusieurs personnes de plusieurs partis. Combien de personne sont au pouvoir en Suisse ?</p>
+                    <div class="formeBas">
+                        <div class="Trait"></div>
+                    </div>
+            </div>
+            <div class="IptNumber">
+                <form action="">
+                    <input type="number" min="1" max="10" placeholder="chiffre">
+                </form>
+            </div>
+        </div>
+
+        <!-- Input Text -->
+
+        <div id="txt" class="Question">
+            <div class="img">
+                <img src="/Quizz/assets/LacLeman.png" alt="">
+            </div>
+            <div class="texte">
+                <strong>La beauté du Lac</strong>
+                <div class="formeHaut">
+                    <div class="Trait"></div>
+                </div>
+                <p>L'un des plus grands Lac d'Europe se trouver en Suiss ET en France. Comment s'appelle-t-il?</p>
+                    <div class="formeBas">
+                        <div class="Trait"></div>
+                    </div>
+            </div>
+            <div class="IptTxt">
+                <form action="">
+                    <input type="text" placeholder="Nom du lac">
+                </form>
+            </div>
+        </div>
+
+         <!-- Input Text -->
+
+        <div id="radio" class="Question">
+            <div class="img">
+                <img src="/Quizz/assets/Capitale.png" alt="">
+            </div>
+            <div class="texte">
+                <strong>La Capitale</strong>
+                <div class="formeHaut">
+                    <div class="Trait"></div>
+                </div>
+                <p>La capitale de la Suisse trompe souvent les étrangers. Le palais fédéral s'y trouve. Quel est le Nom
+                    de la capitale de la Suisse?
+                </p>
+                    <div class="formeBas">
+                        <div class="Trait"></div>
+                    </div>
+            </div>
+            <div class="radioo">
+                <form action="">
+                    <div class="custom-label">
+                        <input type="radio" id="radio1" name="capitale" class="custom-radio">
+                        <label for="radio1">Zürich</label>
+                    </div>
+                    <div class="custom-label">
+                        <input type="radio" id="radio2" name="capitale" class="custom-radio">
+                        <label for="radio2">Genève</label>
+                    </div>
+                    <div class="custom-label">
+                        <input type="radio" id="radio3" name="capitale" class="custom-radio">
+                        <label for="radio3">Berne</label>
+                    </div>
+                    <div class="custom-label">
+                        <input type="radio" id="radio4" name="capitale" class="custom-radio">
+                        <label for="radio4">Lausanne</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Input Switch -->
+
+        <div id="radio" class="Question">
+            <div class="img">
+                <img src="/Quizz/assets/Démographie.png" alt="">
+            </div>
+            <div class="texte">
+                <strong>Les Habitants</strong>
+                <div class="formeHaut">
+                    <div class="Trait"></div>
+                </div>
+                <p>On est un petit pays mais on est quand même beaucoup. Il y a + ou - de 8 millions d'habitants en Suisse ? (gauche = - / droite = +)
+                </p>
+                    <div class="formeBas">
+                        <div class="Trait"></div>
+                    </div>
+            </div>
+            <div class="radioo">
+                <form action="">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </form>
+            </div>
+        </div>
+
+        <!-- Input liste déroulante -->
+
+        <div id="liste" class="Question">
+            <div class="img">
+                <img src="/Quizz/assets/prési.png" alt="">
+            </div>
+            <div class="texte">
+                <strong>Le président</strong>
+                <div class="formeHaut">
+                    <div class="Trait"></div>
+                </div>
+                <p>Alors oui on a un président même si il y a 7 personnes au pouvoir en Suisse. Chaque année, la présidence change. Qui est le président de la Suisse?
+                </p>
+                    <div class="formeBas">
+                        <div class="Trait"></div>
+                    </div>
+            </div>
+            <div class="ListeDéroulante">
+                <form action="">
+                    <select id="choix" name="choix" >
+                        <option value="">Choisis ton président</option>
+                        <option value="option1">Guy Parmelin</option>
+                        <option value="option2">Alain Berset</option>
+                        <option value="option3">Viola Amherd</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+       
+
+        <!-- Input slider -->
+
+        <div id="slider" class="Question">
+            <div class="img">
+                <img src="/Quizz/assets/FIN.png" alt="">
+            </div>
+            <div class="texte">
+                <strong>C'est la fin</strong>
+                <div class="formeHaut">
+                    <div class="Trait"></div>
+                </div>
+                <p>C'est déjà la fin du quiz. Tu as répondu à toutes les questions. Tu peux donner ton avis sur le quiz en faisant glisser le curseur.
+                Une fois fini, clique sur "Envoyer" pour que ton questionnaire soit envoyé !</p>
+                    <div class="formeBas">
+                        <div class="Trait"></div>
+                    </div>
+            </div>
+            <div class="sliderrr">
+                <form action="">
+                    <input type="range" value="0" min="0" max="100" class="sliding">
+                    <div class="MonBouton">
+                        <button type="submit" class="sliding">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
